@@ -12,7 +12,7 @@ function submitHandler(event) {
         outputdate.value = formattedDate;
     } else {
         alert("Please check the box if you are not a Robot");
-        event.preventdefault();
+        event.preventDefault();
     }
 }
 
@@ -25,6 +25,6 @@ function timestamp() {
     } } 
     setInterval(timestamp, 500); 
 
-    function captchasuccess() {
+    function captchasuccess(){
         isCaptchaChecked = true;
     }
