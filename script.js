@@ -1,12 +1,19 @@
-function submitHandler() {
+let isCaptchaChecked = false;
 
-    let outputdate = document.querySelector(".outputdate");
-    let inputdate = document.querySelector(".inputdate");
-    console.log('input date is..', inputdate.value); // this is in string form. 
-    // we need to convert it into the DATE form. 
+function submitHandler(event) {
 
-    let formattedDate = new Date(inputdate.value).toLocaleDateString("en-In");
-    outputdate.value = formattedDate;
+    if(isCaptchaChecked){
+        let outputdate = document.querySelector(".outputdate");
+        let inputdate = document.querySelector(".inputdate");
+        console.log('input date is..', inputdate.value); // this is in string form. 
+        // we need to convert it into the DATE form. 
+    
+        let formattedDate = new Date(inputdate.value).toLocaleDateString("en-In");
+        outputdate.value = formattedDate;
+    } else {
+        alert("Please check the box if you are not a Robot");
+        event.preventdefault();
+    }
 }
 
 function timestamp() { 
@@ -17,3 +24,7 @@ function timestamp() {
         document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); 
     } } 
     setInterval(timestamp, 500); 
+
+    function captchasuccess() {
+        isCaptchaChecked = true;
+    }
