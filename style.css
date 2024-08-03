@@ -42,12 +42,36 @@ form {
     display: flex;
     justify-content: center;
 }
+
+.signature {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .author {
     min-width: 300px;
     max-width: 500px;
+    width: 400px;
     text-align: right;
-    color: maroon;
-    font-size: xx-small;
-    background-color: yellow;
-    display: inline;
+    color: red;
+    font-size: x-small;
+    padding: 5px;
 }
+
+.author span {
+    background-color: yellow;
+    display: inline-block;
+}
+
+.by {
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    color: red;
+    font-size: x-small;
+}
+
+  .by span {
+    display: inline-block;
+  }
