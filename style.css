@@ -42,3 +42,8 @@ form {
     display: flex;
     justify-content: center;
 }
+.author {
+    text-align: right;
+    color: blue;
+    font-size: xx-large;
+}
