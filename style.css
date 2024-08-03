@@ -49,5 +49,5 @@ form {
     color: blue;
     font-size: xx-small;
     background-color: yellow;
-    display: inline;
+    display: inline-block;
 }
