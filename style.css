@@ -46,8 +46,8 @@ form {
     min-width: 300px;
     max-width: 500px;
     text-align: right;
-    color: blue;
+    color: maroon;
     font-size: xx-small;
     background-color: yellow;
-    display: inline-block;
+    display: inline;
 }
