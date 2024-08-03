@@ -75,3 +75,9 @@ form {
   .by span {
     display: inline-block;
   }
+
+  .title1 {
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+  }
